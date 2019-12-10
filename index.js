@@ -9,13 +9,13 @@ off('no-unused-vars')
 off('object-curly-newline')
 off('spaced-comment')
 off('no-param-reassign')
+off('no-trailing-spaces')
+off('no-undef')
 warn('arrow-parens', 'as-needed')
 warn('block-spacing')
 warn('comma-dangle')
 warn('function-paren-newline')
 warn('implicit-arrow-linebreak')
-warn('max-len', {code: 100})
-warn('no-trailing-spaces')
 warn('no-undef')
 warn('object-curly-spacing')
 warn('operator-linebreak', 'before')
@@ -34,6 +34,8 @@ warn('import/order')
 off('react/jsx-one-expression-per-line')
 off('react/prop-types')
 off('react/self-closing-comp')
+off('react/jsx-indent-props')
+off('react/jsx-indent')
 warn('react/jsx-closing-bracket-location')
 warn('react/jsx-filename-extension', {extensions: ['.jsx', '.tsx']})
 
@@ -43,12 +45,11 @@ off('jsx-a11y/label-has-associated-control')
 
 // typescript rules
 off('@typescript-eslint/explicit-function-return-type')
+off('@typescript-eslint/no-explicit-any')
 off('@typescript-eslint/unbound-method')
-warn('@typescript-eslint/no-unused-vars', {args: 'none'})
-warn('@typescript-eslint/member-delimiter-style', {
-  multiline: {delimiter: 'comma'},
-  singleline: {delimiter: 'comma'},
-})
+off('@typescript-eslint/no-empty-function')
+off('@typescript-eslint/no-unused-vars', {args: 'none'})
+off('@typescript-eslint/member-delimiter-style')
 
 module.exports = {
   parser: '@typescript-eslint/parser',

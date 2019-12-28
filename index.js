@@ -67,6 +67,7 @@ off('jsx-a11y/label-has-associated-control')
 
 // typescript rules
 off('@typescript-eslint/explicit-function-return-type')
+off('@typescript-eslint/camelcase')
 off('@typescript-eslint/no-explicit-any')
 off('@typescript-eslint/unbound-method')
 off('@typescript-eslint/no-empty-function')

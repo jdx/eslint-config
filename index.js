@@ -59,6 +59,7 @@ off('react/prop-types')
 off('react/self-closing-comp')
 off('react/jsx-indent-props')
 off('react/jsx-indent')
+off('react/destructuring-assignment')
 warn('react/jsx-closing-bracket-location')
 warn('react/jsx-filename-extension', {extensions: ['.jsx', '.tsx']})
 

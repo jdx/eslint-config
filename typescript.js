@@ -1,14 +1,23 @@
-const c = require('./base')()
-
-c.plugins.push('@typescript-eslint')
-c.extends.push('plugin:@typescript-eslint/recommended')
-c.parser = '@typescript-eslint/parser'
-
-c.parserOptions.ecmaVersion = 2018
-c.parserOptions.sourceType = 'module'
-
-c.off(
-  '@typescript-eslint/explicit-function-return-type',
-)
-
-module.exports = c.build()
+module.exports = {
+  plugins: [
+    '@typescript-eslint',
+  ],
+  extends: [
+    'plugin:@typescript-eslint/recommended',
+  ],
+  overrides: [
+    {
+      files: ['*.tsx'],
+      extends: './react',
+    }
+  ],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: 'module',
+  },
+  rules: {
+    'no-unused-vars': 0,
+    '@typescript-eslint/explicit-function-return-type': 0,
+  }
+}

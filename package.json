@@ -1,7 +1,7 @@
 {
   "name": "@jdxcode/eslint-config",
   "description": "my eslint config",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "author": "jdxcode",
   "bugs": {
     "url": "https://github.com/jdxcode/eslint-config/issues"
